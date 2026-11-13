@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Opcional: parar de observar após aparecer
-                // observer.unobserve(entry.target); 
             }
         });
     }, {
@@ -50,6 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 
-    // 3. (Opcional) Log simples para confirmar que o script rodou
+    // 3. Log simples para confirmar que o script rodou
     console.log("Site de Foz do Iguaçu carregado com sucesso!");
 });
